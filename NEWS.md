@@ -17,6 +17,11 @@ There is now error hints when using a function that requires another package suc
 or GeoMakie to be loaded as well. The error hint tells the user which package need to be
 loaded in, so that the function can be used.
 
+## Add interpolation routine
+With this release, any functions that rely on interpolation now uses the interpolation
+routine written for ClimaAnalysis instead of Interpolations.jl. This substantially reduce
+the number and size of allocations when using these functions.
+
 v0.5.12
 -------
 
